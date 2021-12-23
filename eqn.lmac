@@ -1,0 +1,112 @@
+.EQ
+
+delim $$
+
+
+define lightning '\[u21AF]'
+
+define box '\[u25A1]'
+
+define sphi '\[u03C6]'
+
+
+define asin 'roman "arcsin"'
+
+define acos 'roman "arccos"'
+
+define atan 'roman "arctan"'
+
+
+define isin 'type "relation" \[u2208]'
+
+define notin 'type "relation" \[u2209]'
+
+define sub 'type "relation" \[u2282]'
+
+define sube 'type "relation" \[u2286]'
+
+
+define and 'type "binary" \[u2227]'
+
+define or 'type "binary" \[u2228]'
+
+define cap 'type "binary" \[u2229]'
+
+define cup 'type "binary" \[u222A]'
+
+define mul 'type "binary" \[u22C5]'
+
+define mid 'type "binary" \[u007C]'
+
+
+define forall 'type "operator" \[u2200]'
+
+define exists 'type "operator" \[u2203]'
+
+
+define larr 'type "relation" \[u2190]'
+
+define Larr 'type "relation" \[u21D0]'
+
+define rarr 'type "relation" \[u2192]'
+
+define Rarr 'type "relation" \[u21D2]'
+
+define harr 'type "relation" \[u2194]'
+
+define Harr 'type "relation" \[u21D4]'
+
+
+define NN 'fat roman "N"'
+
+define Nat 'NN'
+
+define ZZ 'fat roman "Z"'
+
+define Int 'ZZ'
+
+define QQ 'fat roman "Q"'
+
+define Rat 'QQ'
+
+define RR 'fat roman "R"'
+
+define Real 'RR'
+
+define CC 'fat roman "C"'
+
+define Complex 'CC'
+
+
+define setrost 'left { $1 right }'
+
+define setrost2 'left { $1, $2 right }'
+
+define setrost3 'left { $1, $2, $3 right }'
+
+define setrost4 'left { $1, $2, $3, $4 right }'
+
+define setrost5 'left { $1, $2, $3, $4, $5 right }'
+
+define setrost6 'left { $1, $2, $3, $4, $5, $6 right }'
+
+define setrost7 'left { $1, $2, $3, $4, $5, $6, $7 right }'
+
+define setrost8 'left { $1, $2, $3, $4, $5, $6, $7, $8 right }'
+
+define setrost9 'left { $1, $2, $3, $4, $5, $6, $7, $8, $9 right }'
+
+define setbuild 'left { $1 mid $2 }'
+
+
+define pars 'left ( $1 right )'
+
+define abs 'left | $1 right |'
+
+define binom 'type "inner" { left ( pile { $1 above $2 } right ) }'
+
+define flr 'left floor $1 right floor'
+
+define ceil 'left ceiling $1 right ceiling'
+
+.EN

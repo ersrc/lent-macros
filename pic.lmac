@@ -1,0 +1,127 @@
+.PS
+
+define coords {
+
+	Root: Here
+
+	arrow from Root to Root + $1, 0;
+	arrow from Root to Root + 0, $1;
+	line from Root to Root + -$1, 0;
+	line from Root to Root + 0, -$1;
+	
+	move to Root;
+
+}
+
+define cqdr1 {
+
+	Root: Here
+
+	$2 from Root to Root + $1, 0;
+	$3 from Root to Root + 0, $1;
+	
+	move to Root;
+
+}
+
+define cqdr2 {
+
+	Root: Here
+
+	$2 from Root to Root + 0, $1;
+	$3 from Root to Root + -$1, 0;
+	
+	move to Root;
+
+}
+
+define cqdr3 {
+
+	Root: Here
+
+	$2 from Root to Root + -$1, 0;
+	$3 from Root to Root + 0, -$1;
+	
+	move to Root;
+
+}
+
+define cqdr4 {
+
+	Root: Here
+
+	$2 from Root to Root + $1, 0;
+	$3 from Root to Root + 0, -$1;
+	
+	move to Root;
+
+}
+
+define qdr1 {
+
+	cqdr1($1, arrow, arrow)
+
+}
+
+define qdr2 {
+
+	cqdr2($1, arrow, arrow)
+
+}
+
+define qdr3 {
+
+	cqdr3($1, arrow, arrow)
+
+}
+
+define qdr4 {
+
+	cqdr4($1, arrow, arrow)
+
+}
+
+define cline {
+
+	Return: Here
+
+	for i=0 to $1 by 1 do {
+	
+		Cursor: Here
+		
+		line from Cursor + 0, 0.05 down 0.1;
+		
+		if "{n}" == $2 then {
+			sprintf("%g", i) at Cursor - 0, 0.15;
+		} else {
+			sprintf($2) at Cursor - 0, 0.15;
+		}
+		
+		line from Cursor to Cursor + 1, 0;
+		
+		if (i == $1) && ("->" == $3) then {
+		
+			arrow right 0.1;
+		
+		}
+	
+	}
+	
+	move to Return;
+
+}
+
+define nline {
+
+	cline($1, "{n}", "->")
+	
+}
+
+define sline {
+
+	cline($1, "", "->")
+	
+}
+
+.PE
+
