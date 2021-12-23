@@ -1,0 +1,71 @@
+.de THR
+.(x stz
+Satz \\$1 \\$2
+.)x
+
+.bx "Satz \\$1 \\$2"
+..
+
+
+.de THN
+.hl
+..
+
+.de BEB
+.(x beb
+Beobachtung \\$1 \\$2
+.)x
+
+.b "Beobachtung \\$1 \\$2"
+..
+
+.de BEN
+.ll -35
+.hl
+.ll +35
+..
+
+.de KOR
+.(x kor
+Korollar \\$1 \\$2
+.)x
+
+.b "Korollar \\$1 \\$2"
+..
+
+
+.de KON
+.ll -35
+.hl
+.ll +35
+..
+
+
+.de LEM
+.(x lem
+Lemma \\$1 \\$2
+.)x
+
+.b "Lemma \\$1 \\$2"
+..
+
+
+.de LEN
+.ll -35
+.hl
+.ll +35
+..
+
+.de PRF
+.(x prf
+Beweis \\$1 \\$2
+.)x
+
+.b "Beweis \\$1 \\$2"
+..
+
+
+.de PRN
+.rj 1
+\[u25A1]
+..
