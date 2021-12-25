@@ -9,7 +9,7 @@
 .ds examplename Example
 
 
-.ds nospace \h-'\w' 'u'
+.ds nospace \h'-\w' 'u'
 
 
 .de THS
