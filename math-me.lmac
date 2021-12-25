@@ -1,13 +1,8 @@
-.ds theoremname Theorem
-
-.ds lemmaname Lemma
-
-.ds corollaryname Corollary
-
-.ds proofname Proof
-
-.ds examplename Example
-
+.if !d theoremname .ds theoremname Theorem
+.if !d lemmaname .ds lemmaname Lemma
+.if !d corollaryname .ds corollaryname Corollary
+.if !d proofname .ds proofname Proof
+.if !d examplename .ds examplename Example
 
 .ds nospace \h'-\w' 'u'
 
