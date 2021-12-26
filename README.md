@@ -16,3 +16,14 @@ proofs, etc.
 symbols and notations.
 
 `pic.lmac`: This file contains useful pic macro definitions for drawing with pic.
+
+## Useful Resources
+
+- "Writing Papers with NROFF using −me", a detailed explanation of the -me macros: [https://docs.freebsd.org/44doc/usd/19.memacros/paper.pdf]
+
+- "Typesetting Mathematics - User’s Guide", useful guide on eqn: [https://pspodcasting.net/dan/blog/2018/docs/eqn.pdf]
+
+- "PIC - A Graphics Language for Typesetting
+Revised User Manual": [https://doc.cat-v.org/unix/v8/picmemo.pdf]
+
+- Groff manual: [https://www.gnu.org/software/groff/manual/groff.pdf]
