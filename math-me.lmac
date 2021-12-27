@@ -12,10 +12,12 @@
 \*[theoremname] \\$1: \\$2
 .)x
 
+.lp
 .bx "\*[theoremname] \\$1: \\$2"
 ..
 
 .de THE
+.lp
 .hl
 ..
 
@@ -25,10 +27,12 @@
 \*[lemmaname] \\$1: \\$2
 .)x
 
+.lp
 .b "\*[lemmaname] \\$1: \\$2"
 ..
 
 .de LME
+.lp
 .(b
 .ll -35
 .hl
@@ -42,10 +46,12 @@
 \*[corollaryname] \\$1: \\$2
 .)x
 
+.lp
 .b "\*[corollaryname] \\$1: \\$2"
 ..
 
 .de CRE
+.lp
 .(b
 .ll -35
 .hl
@@ -59,10 +65,12 @@
 \*[proofname] \\$1: \\$2
 .)x
 
+.lp
 .b "\*[proofname] \\$1: \\$2"
 ..
 
 .de PRE
+.lp
 .rj 1
 \[u25A1]
 ..
@@ -73,10 +81,12 @@
 \*[examplename] \\$1: \\$2
 .)x
 
+.lp
 .b "\*[examplename] \\$1: \\$2"
 ..
 
 .de XPE
+.lp
 .(b
 .ll -35
 .hl
