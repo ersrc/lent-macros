@@ -21,7 +21,7 @@ define isin 'type "relation" \[u2208]'
 
 define notin 'type "relation" \[u2209]'
 
-define sub 'type "relation" \[u2282]'
+define subs 'type "relation" \[u2282]'
 
 define sube 'type "relation" \[u2286]'
 
