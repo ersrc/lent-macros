@@ -1,6 +1,6 @@
-.de MISS
+.de MISG
 
-.(x miss
+.(x misg
 MISSING: \\$1
 .)x
 
