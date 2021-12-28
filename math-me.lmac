@@ -1,3 +1,4 @@
+.if !d definitionname .ds definitionname Definition
 .if !d theoremname .ds theoremname Theorem
 .if !d lemmaname .ds lemmaname Lemma
 .if !d corollaryname .ds corollaryname Corollary
@@ -7,13 +8,28 @@
 .ds nospace \h'-\w' 'u'
 
 
-.de THS
-.(x stz
-\*[theoremname] \\$1: \\$2
+.de DFS
+.(x def
+\\*[definitionname] \\$1: \\$2
 .)x
 
 .lp
-.bx "\*[theoremname] \\$1: \\$2"
+.b "\\*[definitionname] \\$1: \\$2"
+..
+
+.de DFE
+.lp
+.hl
+..
+
+
+.de THS
+.(x theo
+\\*[theoremname] \\$1: \\$2
+.)x
+
+.lp
+.bx "\\*[theoremname] \\$1: \\$2"
 ..
 
 .de THE
@@ -24,11 +40,11 @@
 
 .de LMS
 .(x lem
-\*[lemmaname] \\$1: \\$2
+\\*[lemmaname] \\$1: \\$2
 .)x
 
 .lp
-.b "\*[lemmaname] \\$1: \\$2"
+.b "\\*[lemmaname] \\$1: \\$2"
 ..
 
 .de LME
@@ -42,12 +58,12 @@
 
 
 .de CRS
-.(x kor
-\*[corollaryname] \\$1: \\$2
+.(x cor
+\\*[corollaryname] \\$1: \\$2
 .)x
 
 .lp
-.b "\*[corollaryname] \\$1: \\$2"
+.b "\\*[corollaryname] \\$1: \\$2"
 ..
 
 .de CRE
@@ -62,11 +78,11 @@
 
 .de PRS
 .(x prf
-\*[proofname] \\$1: \\$2
+\\*[proofname] \\$1: \\$2
 .)x
 
 .lp
-.b "\*[proofname] \\$1: \\$2"
+.b "\\*[proofname] \\$1: \\$2"
 ..
 
 .de PRE
@@ -77,12 +93,12 @@
 
 
 .de XPS
-.(x stz
-\*[examplename] \\$1: \\$2
+.(x xpl
+\\*[examplename] \\$1: \\$2
 .)x
 
 .lp
-.b "\*[examplename] \\$1: \\$2"
+.b "\\*[examplename] \\$1: \\$2"
 ..
 
 .de XPE
