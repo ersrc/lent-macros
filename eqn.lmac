@@ -96,7 +96,7 @@ define setrost8 'left { $1, $2, $3, $4, $5, $6, $7, $8 right }'
 
 define setrost9 'left { $1, $2, $3, $4, $5, $6, $7, $8, $9 right }'
 
-define setbuild 'left { $1 mid $2 }'
+define setbuild 'left { $1 mid $2 right }'
 
 
 define pars 'left ( $1 right )'
